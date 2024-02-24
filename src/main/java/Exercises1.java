@@ -38,7 +38,7 @@ public class Exercises1 {
 
     public static void main(String[] args) {
         Exercises1 a = new Exercises1();
-        System.out.print(a.factorial(4));
+        System.out.print(a.factorial(1));
     }
 
 }
