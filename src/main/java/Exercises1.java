@@ -32,8 +32,10 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        if (rows == 1)
+        if (rows == 1) {
             System.out.println('*');
+            return null;
+        }
         generateTriangle(rows - 1);
         for (int i = 0 ; i < rows ; i++)
             System.out.print('*');
@@ -44,7 +46,7 @@ public class Exercises1 {
 
     public static void main(String[] args) {
         Exercises1 a = new Exercises1();
-        System.out.print(a.fibonacci(6));
+        System.out.print(a.generateTriangle(6));
     }
 
 }
