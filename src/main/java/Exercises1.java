@@ -32,7 +32,7 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        if (rows <= 0)
+        /*if (rows <= 0)
             return null;
         if (rows == 1) {
             System.out.println('*');
@@ -41,14 +41,20 @@ public class Exercises1 {
         generateTriangle(rows - 1);
         for (int i = 0 ; i < rows ; i++)
             System.out.print('*');
-        System.out.println();
-        return null;
+        System.out.println();*/
+        char[][] tria = new char[rows][];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j <= i ; j++) {
+                tria[i][j] = '*';
+            }
+        }
+        return tria;
     }
 
 
     public static void main(String[] args) {
         Exercises1 a = new Exercises1();
-        System.out.print(a.fibonacci(5));
+        
     }
 
 }
