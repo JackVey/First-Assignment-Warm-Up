@@ -42,11 +42,13 @@ public class Exercises1 {
         for (int i = 0 ; i < rows ; i++)
             System.out.print('*');
         System.out.println();*/
-        char[][] tria = new char[rows][rows];
+        char[][] tria = new char[rows][];
         for (int i = 0; i < rows; i++) {
+            char[] stars = new char[i + 1];
             for (int j = 0; j <= i ; j++) {
-                tria[i][j] = '*';
+                stars[j] = '*';
             }
+            tria[i] = stars;
         }
         return tria;
     }
@@ -61,6 +63,15 @@ public class Exercises1 {
             }
             System.out.println();
         }
+        /*char[][] tria = new char[2][];
+        tria[0] = new char[]{'*'};
+        tria[1] = new char[]{'*', '*'};
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j <= i ; j++) {
+                System.out.print(tria[i][j]);
+            }
+            System.out.println();
+        }*/
     }
 
 }
