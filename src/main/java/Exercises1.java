@@ -14,8 +14,9 @@ public class Exercises1 {
     the series -> 1, 1, 2, 3, 5, 8, ...
     */
     public long fibonacci(int n) {
-        // TODO
-        return 0;
+        if (n == 1 || n == 2)
+            return 1;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
 
@@ -38,7 +39,7 @@ public class Exercises1 {
 
     public static void main(String[] args) {
         Exercises1 a = new Exercises1();
-        System.out.print(a.factorial(1));
+        System.out.print(a.fibonacci(6));
     }
 
 }
