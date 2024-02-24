@@ -3,8 +3,9 @@ public class Exercises1 {
     implement a function that returns factorial of given n
      */
     public long factorial(int n) {
-        // TODO
-        return 0;
+        if (n == 0)
+            return 1;
+        return factorial(n - 1) * n;
     }
 
 
@@ -36,7 +37,8 @@ public class Exercises1 {
 
 
     public static void main(String[] args) {
-        // test your code here!
+        Exercises1 a = new Exercises1();
+        System.out.print(a.factorial(4));
     }
 
 }
