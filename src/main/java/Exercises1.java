@@ -42,7 +42,7 @@ public class Exercises1 {
         for (int i = 0 ; i < rows ; i++)
             System.out.print('*');
         System.out.println();*/
-        char[][] tria = new char[rows][];
+        char[][] tria = new char[rows][rows];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j <= i ; j++) {
                 tria[i][j] = '*';
@@ -54,7 +54,13 @@ public class Exercises1 {
 
     public static void main(String[] args) {
         Exercises1 a = new Exercises1();
-        
+        char[][] tria = a.generateTriangle(4);
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j <= i ; j++) {
+                System.out.print(tria[i][j]);
+            }
+            System.out.println();
+        }
     }
 
 }
