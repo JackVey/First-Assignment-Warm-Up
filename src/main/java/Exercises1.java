@@ -32,7 +32,12 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        // TODO
+        if (rows == 1)
+            System.out.println('*');
+        generateTriangle(rows - 1);
+        for (int i = 0 ; i < rows ; i++)
+            System.out.print('*');
+        System.out.println();
         return null;
     }
 
